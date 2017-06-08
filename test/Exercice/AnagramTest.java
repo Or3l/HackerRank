@@ -1,11 +1,9 @@
 package Exercice;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 
 /**
  * Created by Aurel on 5/30/17.
@@ -17,18 +15,6 @@ public class AnagramTest {
     @Before
     public void setUp(){
         this.anagram  = new Anagram();
-    }
-
-    @Test
-    public void isAnagram(){
-        boolean res = anagram.areAnagram("abc", "cba");
-        Assert.assertTrue(res);
-    }
-
-    @Test
-    public void isAnagramFalse(){
-        boolean res = anagram.areAnagram("ab", "cba");
-        assertFalse(res);
     }
 
     @Test
